@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace tt_qaa_CSharp
 {
-    class PropertiesCollection
+    public class PropertiesCollection
     {
         public static IWebDriver driver { get; set; }
     }

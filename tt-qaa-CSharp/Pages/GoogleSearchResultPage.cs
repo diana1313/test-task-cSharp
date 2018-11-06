@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace tt_qaa_CSharp
 {
-    class GoogleSearchResultPage
+    public class GoogleSearchResultPage
     {
 
         private IWebDriver driver;

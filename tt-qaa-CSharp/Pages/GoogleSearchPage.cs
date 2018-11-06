@@ -5,7 +5,7 @@ using SeleniumExtras.PageObjects;
 
 namespace tt_qaa_CSharp
 {
-    class GoogleSearchPage
+   public class GoogleSearchPage
     { 
         public GoogleSearchPage (IWebDriver driver)
         { 

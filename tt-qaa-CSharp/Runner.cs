@@ -6,14 +6,9 @@ using System;
 namespace tt_qaa_CSharp
 {
 
-   
-    class Runner
+
+    public class Runner
     {
-     
-
-        static void Main(string[] args) { 
-
-        }
 
 
         [SetUp]
@@ -25,7 +20,8 @@ namespace tt_qaa_CSharp
         }
 
         [Test]
-        public void GoogleSearchTest() {
+        public void GoogleSearchTest()
+        {
             GoogleSearchPage googleSearchPage = new GoogleSearchPage(PropertiesCollection.driver);
 
             googleSearchPage.TypeInSearch("automation");
@@ -33,7 +29,7 @@ namespace tt_qaa_CSharp
             googleSearchResultPage.OpenFirstResult();
             Console.WriteLine("Title  of : ' " + PropertiesCollection.driver.Title + "' , should contains searched data");
             Assert.IsTrue(PropertiesCollection.driver.Title.ToLower().Contains("automation"), "Title doesn't contain searched data");
-                     
+
         }
 
         [Test]
